@@ -13,7 +13,7 @@ const Furniture=()=>{
             if (selectedCategory==='Все категории') return true;
             return selectedCategory===item.category;
         })
-        .map((item,index)=><Item key={index} item={item}/>)}
+        .map((item)=><Item key={item.id} item={item}/>)}
     </div>)
 }
 export default Furniture;

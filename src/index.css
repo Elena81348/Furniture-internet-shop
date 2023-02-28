@@ -81,3 +81,11 @@ button{
 p{
   margin: 10px;
 }
+@media all and(max-width: 500px){
+  .cartIcon{
+    width: 30px;
+  }
+  h2,h3,p,button{
+    font-size: 15px;
+  }
+}

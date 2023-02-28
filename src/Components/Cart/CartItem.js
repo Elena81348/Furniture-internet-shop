@@ -13,7 +13,7 @@ const CartItem=({cartItem})=>{
             </span>
         </p>
         <p>Количество: {cartItem.quantity}</p>
-        <p>Цена: {items.price*cartItem.quantity} грн</p>
+        <p>Цена: {(items.price*cartItem.quantity).toFixed(2)} грн</p>
     </div>)
 }
 export default CartItem;

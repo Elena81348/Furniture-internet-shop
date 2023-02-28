@@ -11,7 +11,7 @@ const Cart=()=>{
         <div>
             <img className="cartIcon" src="https://img.icons8.com/external-sbts2018-solid-sbts2018/512/external-cart-basic-ui-elements-2.5-sbts2018-solid-sbts2018.png" alt="cart"/>
             <h3>СУММА К ОПЛАТЕ: {totalPrice.toFixed(2)} грн</h3>
-            {cartItems.map((cartItem,index)=><CartItem key={index} cartItem={cartItem}/>)}
+            {cartItems.map((cartItem,id)=><CartItem key={id} cartItem={cartItem}/>)}
         </div>
     )
 }
